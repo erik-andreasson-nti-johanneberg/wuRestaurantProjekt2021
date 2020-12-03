@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+}
+
+#homepage {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    'he he he'
+    '.. s1 ..'
+    's2 s2 s2'
+    's3 s3 s3'
+    'fo fo fo';
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 15% 30% 35% 10%;
+    gap: 10px;
+}
+
+header {
+    grid-area: he;
+    display: flex;
+    justify-content: space-around;
+    background-color: chartreuse;
+}
+
+footer {
+    background-color: darkgreen;
+    grid-area: fo;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#section1 {
+    grid-area: s1;
+    background-color: crimson;
+}
+
+#gridsection2 {
+    background-color: darkorange;
+    grid-area: s2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#gridsection2 article {
+    align-self: center;
+    justify-self: center;
+    background-color: deeppink;
+    gap: 10px;
+    padding: 10px;
+}
+
+#gridsection3 {
+    grid-area: s3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: blueviolet;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#gridsection3 img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    justify-self: center;
+}
+
+#gridsection3 > article {
+    align-self: center;
+    justify-self: center;
+    background-color: blue;
+}
