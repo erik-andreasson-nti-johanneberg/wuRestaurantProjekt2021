@@ -1,9 +1,137 @@
 *{
-    margin: 0px;
+
 }
 
+.frame{
+    background-color:rgb(100, 189, 99);
+    margin: 5px;
+    padding: 15px;
+}
+
+.centerh{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(146, 120, 120);
+}
+
+header {
+    grid-area: he;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(48, 112, 47);
+}
+
+footer {
+    background-color: rgb(48, 112, 47);
+    grid-area: fo;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#reviewspage{
+    display: grid;
+    grid-template-areas: 
+    'he he he'
+    '.. s1 ..'
+    '.. rs ..'
+    '.. s0 ..'
+    'fo fo fo';
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 15% 20% 45% 10% 10%;
+    margin: 5px;
+    gap: 5px;
+    height: 100vh;
+}
+
+#scrolling_reviews{
+    grid-area: rs;
+    background-color: rgb(48, 112, 47);
+}
+
+#bottomsection{
+    grid-area: s0;
+    background-color: rgb(48, 112, 47);
+}
+
+
+#menupage{
+    display: grid;
+    grid-template-areas: 
+    'he he he'
+    '.. s1 ..'
+    'sa sa sa'
+    'sb sb sb'
+    'fo fo fo';
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 15% 50% 15% 10%;
+    margin: 5px;
+    gap: 5px;
+}
+
+#section2_menu{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-area: sa;
+    background-color: rgb(48, 112, 47);
+}
+
+#section2_menu_1{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 65% 35%;
+    background-color:  rgb(48, 112, 47);
+}
+
+#section2_menu_2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30%;
+    background-color:  rgb(48, 112, 47);
+}
+
+#section3_menu{
+    grid-area: sb;
+    background-color: rgb(48, 112, 47);
+}
+
+.textwidgets{
+    background-color: rgb(100, 189, 99);
+}
+
+#section2_menu_1 img{
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    align-content: center;
+}
+
+#section2_menu_2 img{
+    width: 150x;
+    height: 150px;
+    justify-self: center;
+    align-content: center;
+}
+
+
 #homepage {
-    width: 100vw;
     display: grid;
     grid-template-areas: 
     'he he he'
@@ -12,31 +140,21 @@
     's3 s3 s3'
     'fo fo fo';
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 15% 30% 35% 10%;
+    grid-template-rows: 10% 15% 35% 35% 5%;
     gap: 10px;
-}
-
-header {
-    grid-area: he;
-    display: flex;
-    justify-content: space-around;
-    background-color: chartreuse;
-}
-
-footer {
-    background-color: darkgreen;
-    grid-area: fo;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 #section1 {
     grid-area: s1;
-    background-color: crimson;
+    background-color:  rgb(48, 112, 47);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
 #gridsection2 {
-    background-color: darkorange;
+    background-color: rgb(48, 112, 47);
     grid-area: s2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,9 +164,11 @@ footer {
 #gridsection2 article {
     align-self: center;
     justify-self: center;
-    background-color: deeppink;
+    background-color:  rgb(100, 189, 99);
     gap: 10px;
     padding: 10px;
+    width: 300px;
+    height: 250px;
 }
 
 #gridsection3 {
@@ -56,20 +176,23 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    background-color: blueviolet;
+    background-color: rgb(48, 112, 47);
     gap: 10px;
     padding-top: 10px;
 }
 
 #gridsection3 img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     align-self: center;
     justify-self: center;
 }
 
-#gridsection3 > article {
+#gridsection3 article {
     align-self: center;
     justify-self: center;
-    background-color: blue;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    background-color: rgb(100, 189, 99);
 }
