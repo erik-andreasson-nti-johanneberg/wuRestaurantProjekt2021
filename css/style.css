@@ -2,6 +2,46 @@
 
 }
 
+.dot {
+
+}
+
+.arrow-up{
+    width: 0; 
+    height: 0; 
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+
+    border-bottom: 500px solid;
+  }
+  
+  .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #f00;
+  }
+  
+  .arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid green;
+  }
+  
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid blue; 
+  }
+
 .frame{
     background-color:rgb(100, 189, 99);
     margin: 5px;
@@ -21,6 +61,10 @@ nav{
     width: 100%;
 }
 
+nav h1{
+    color: white;
+}
+
 a:hover{
     text-decoration: underline;
     color: white;
@@ -28,7 +72,7 @@ a:hover{
 
 a{
     text-decoration: none;
-    color: rgb(146, 120, 120);
+    color: white;
 }
 
 header {
@@ -42,7 +86,8 @@ footer {
     background-color: rgb(48, 112, 47);
     grid-area: fo;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #reviewspage{
@@ -80,7 +125,7 @@ footer {
     'sb sb sb'
     'fo fo fo';
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 15% 50% 15% 10%;
+    grid-template-rows: 10% 15% 55% 15% 5%;
     margin: 5px;
     gap: 5px;
 }
@@ -91,6 +136,8 @@ footer {
     grid-template-rows: 50% 50%;
     grid-area: sa;
     background-color: rgb(48, 112, 47);
+    gap: 5px;
+    padding: 10px;
 }
 
 #section2_menu_1{
@@ -98,6 +145,7 @@ footer {
     grid-template-columns: 33% 34% 33%;
     grid-template-rows: 65% 35%;
     background-color:  rgb(48, 112, 47);
+    gap: 5px;
 }
 
 #section2_menu_2{
@@ -105,6 +153,7 @@ footer {
     grid-template-columns: 50% 50%;
     grid-template-rows: 70% 30%;
     background-color:  rgb(48, 112, 47);
+    gap: 5px;
 }
 
 #section3_menu{
@@ -114,20 +163,24 @@ footer {
 
 .textwidgets{
     background-color: rgb(100, 189, 99);
+    width: 300px;
+    height: 70px;
+    justify-self: center;
+    align-self: center;
 }
 
 #section2_menu_1 img{
     width: 150px;
     height: 150px;
     justify-self: center;
-    align-content: center;
+    align-self: center;
 }
 
 #section2_menu_2 img{
     width: 150x;
     height: 150px;
     justify-self: center;
-    align-content: center;
+    align-self: center;
 }
 
 
@@ -182,8 +235,10 @@ footer {
 }
 
 #gridsection3 img {
-    width: 250px;
-    height: 250px;
+    height: 325px;
+    width: 325px;
+    background-color: black;
+    border-radius: 50%;
     align-self: center;
     justify-self: center;
 }
